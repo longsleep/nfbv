@@ -1,0 +1,23 @@
+Source: nfbv
+Section: utils
+Priority: optional
+Maintainer: Simon Eisenmann <simon@longsleep.org>
+Build-Depends: debhelper (>= 9.0.0),
+	autotools-dev,
+	libjpeg-dev | libjpeg8-dev,
+	libpng-dev | libpng12-dev,
+	libgif-dev | libgif7-dev
+Standards-Version: 3.9.7
+Homepage: https://github.com/dankamongmen/nfbv
+Vcs-Git: https://github.com/dankamongmen/nfbv
+Vcs-Browser: https://github.com/dankamongmen/nfbv
+
+Package: nfbv
+Provides: fbv
+Replaces: fbv
+Conflicts: fbv
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Framebuffer picture viewer
+ Picture viewer for the Linux framebuffer.
+

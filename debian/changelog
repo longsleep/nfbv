@@ -1,0 +1,6 @@
+nfbv (1.0~git.20130118.f1a79eb-0~xenial0.0) xenial; urgency=medium
+
+  * Initial debian packaging.
+
+ -- Simon Eisenmann <simon@longsleep.org>  Sun, 08 May 2016 11:11:30 +0200
+

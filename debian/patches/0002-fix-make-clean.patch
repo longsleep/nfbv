@@ -1,0 +1,20 @@
+From: Simon Eisenmann <simon@longsleep.org>
+Date: Sun, 8 May 2016 11:35:28 +0200
+Subject: fix-make-clean Remove crappy configure check
+
+---
+ Makefile | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 30d0cc7..9783252 100644
+--- a/Makefile
++++ b/Makefile
+@@ -22,7 +22,6 @@ $(OUT): $(OBJECTS) $(CONF)
+ 	$(CC) $(LDFLAGS) -o $(OUT) $(OBJECTS) $(LIBS)
+ 
+ $(CONF):
+-	$(error Please run ./configure first...)
+ 
+ clean:
+ 	rm -f $(OBJECTS) *~ $$$$~* *.bak core config.log $(OUT)
